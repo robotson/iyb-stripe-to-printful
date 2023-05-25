@@ -1,0 +1,15 @@
+{
+  "name": "iyb-stripe-to-printful",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx dotenv-vault pull && mv .env .dev.vars && wrangler dev",
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "stripe": "^11.15.0"
+  },
+  "devDependencies": {
+    "dotenv-vault": "^1.22.0"
+  }
+}
