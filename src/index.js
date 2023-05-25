@@ -76,7 +76,7 @@ async function createPrintfulOrder(printfulApiKey, orderData, lineItems) {
   // Send the request to the Printful API
   // confirm param can let orders be confirmed automatically
   const queryParams = new URLSearchParams();
-  queryParams.set("confirm", false);
+  queryParams.set("confirm", true);
   const endpointWithParams = `https://api.printful.com/orders?${queryParams.toString()}`;
 
   const response = await fetch(endpointWithParams, {
